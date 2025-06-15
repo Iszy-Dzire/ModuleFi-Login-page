@@ -14,7 +14,7 @@ A sleek, responsive, and animated login interface inspired by the ChatGPT authen
 - 📱 Optimized for mobile use (touch-friendly & responsive)
 
 
-🛠 Technologies Used
+## 🛠 Technologies Used
 
 - HTML5
 - CSS3 (custom variables, animations)
