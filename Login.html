@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ModuleFi Login</title>
+  <style>
+    :root {
+      --bg-light: #f56b5b;
+      --bg-dark: #1e1e1e;
+      --text-light: #1111ff;
+      --text-dark: #00f7ff;
+      --input-bg-light: #ffffff;
+      --input-bg-dark: #2e2e2e;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--bg-light);
+      transition: background-color 0.4s ease;
+    }
+
+    .container {
+      text-align: center;
+      padding: 20px;
+      width: 100%;
+      max-width: 350px;
+      animation: slideIn 1s ease-out;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .headline {
+      font-size: 2.5rem;
+      color: var(--text-light);
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    .dot {
+      display: inline-block;
+      animation: pulse 1.5s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.4); opacity: 0.6; }
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    input {
+      padding: 12px;
+      border-radius: 25px;
+      border: none;
+      font-size: 1rem;
+      outline: none;
+      background-color: var(--input-bg-light);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .btn {
+      padding: 13px;
+      border-radius: 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.2s;
+      font-weight: 600;
+      border: none;
+      width: 100%;
+    }
+
+    .btn-login {
+      background-color: #1111ff;
+      color: white;
+    }
+
+    .btn-google {
+      background-color: white;
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .btn-google img {
+      height: 20px;
+    }
+
+    .toggle-btn {
+      background: transparent;
+      border: none;
+      font-size: 1.5rem;
+      color: white;
+      margin-top: 30px;
+      cursor: pointer;
+    }
+
+    .message {
+      margin-top: 15px;
+      font-size: 1rem;
+      color: white;
+    }
+
+    body.dark {
+      background-color: var(--bg-dark);
+    }
+
+    body.dark .headline {
+      color: var(--text-dark);
+    }
+
+    body.dark input {
+      background-color: var(--input-bg-dark);
+      color: white;
+    }
+
+    body.dark .btn-login {
+      background-color: #00f7ff;
+      color: black;
+    }
+
+    body.dark .btn-google {
+      background-color: #fff;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="headline">ModuleFi Login<span class="dot">●</span></h1>
+
+    <div class="form-group">
+      <input type="email" id="email" placeholder="Email" />
+      <input type="password" id="password" placeholder="Password" />
+    </div>
+
+    <button class="btn btn-login" onclick="login()">Log In</button>
+    <div style="margin: 10px 0;">or</div>
+    <button class="btn btn-google" onclick="loginWithGoogle()">
+      <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google">
+      Continue with Google
+    </button>
+
+    <p class="message" id="msg"></p>
+
+    <button class="toggle-btn" onclick="toggleTheme()">🌙</button>
+  </div>
+
+  <script>
+    function login() {
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value.trim();
+      const msg = document.getElementById("msg");
+
+      if (!email || !password) {
+        msg.textContent = "Please fill in all fields ❗";
+      } else {
+        msg.textContent = `Welcome back to ModuleFi, ${email}! ✅`;
+      }
+    }
+
+    function loginWithGoogle() {
+      document.getElementById("msg").textContent = "Redirecting to Google... 🚀";
+    }
+
+    function toggleTheme() {
+      document.body.classList.toggle("dark");
+      const icon = document.querySelector(".toggle-btn");
+      icon.textContent = document.body.classList.contains("dark") ? "🌞" : "🌙";
+    }
+  </script>
+</body>
+</html>
