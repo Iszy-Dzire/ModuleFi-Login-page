@@ -1,37 +1,47 @@
-# 🔐 ModuleFi Login Page
+# 👋 Hi, I’m Iszy Dzire
 
-A sleek, responsive, and animated login interface inspired by the ChatGPT authentication page — rebuilt with **just HTML, CSS, and JavaScript** so it works smoothly on browsers, mobile devices, and even code editors like **Acode on Android** 📱.
+ 🧱 Blockchain Developer (Full-stack) |🎓 Marine Engineering student | 🖥️ Frontend Enthusiast | 🌱 Backend Explorer |Smart Contract Security Analyst.
 
+---
 
+### 🚀 Why I’m Learning Blockchain Development
 
-## ✨ Features
+I’m diving deep into blockchain development because I believe the future of the internet is decentralized — and I want to help build it.
 
-- 💡 Animated pulse dot headline (like ChatGPT)
-- 🌓 Theme toggle (Light/Dark mode)
-- 🔐 Login form with basic input validation
-- 🔗 Google-style login button
-- 🎯 Built with zero dependencies — fully offline compatible
-- 📱 Optimized for mobile use (touch-friendly & responsive)
+I’m not here just for the hype. I’m here to create real-world Web3 tools that empower users, remove middlemen, and give people true ownership of their data and assets.
 
+For me, blockchain isn’t just tech — it’s a revolution. And I’m here early to **learn, build, and contribute.**
 
-## 🛠 Technologies Used
+---
 
-- HTML5
-- CSS3 (custom variables, animations)
-- JavaScript (vanilla)
+### 🛠️ What I'm Building
 
+Currently working on **[ModuleFi] — a plug-and-play smart contract generator designed to make Solidity development easier for beginners.
 
+🔧 Tech Stack:
+- Solidity, Remix
+- HTML/CSS/JavaScript
+- Git & GitHub
+- (Expanding into Node.js + Hardhat soon 🚧)
 
-## 📦 Setup & Usage
+---
 
-> You can run this file anywhere! No build tools or Node.js needed.
+### 🌐 Connect With Me
 
-### 📱 On Mobile (Acode or browser)
-1. Paste code into a file called `index.html`
-2. Open it in your browser (or use Acode’s Live Preview)
+- 🐦 Twitter: @IszyDzire (https://twitter.com/yourhandle)
+- 📸 Instagram: @positivity_portal(https://instagram.com/yourhandle)
+- Facebook: Israel Adeyanju 
+- 📬 Email: ajibadeisrael11@gmail.com
 
-### 💻 On Desktop
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/your-username/modulefi-login
-   cd modulefi-login
+---
+
+### 📈 Stats & Contributions
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=your-username&show_icons=true&theme=tokyonight)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=your-username&layout=compact&theme=tokyonight)
+
+---
+
+### ⚡ Fun Fact
+
+I’m probably the only Marine Engineer you’ll meet who’s obsessed with Web3 and cinematic UI design. 😅
